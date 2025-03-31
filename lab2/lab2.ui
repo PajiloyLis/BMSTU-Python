@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1211</width>
+    <height>842</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>576</width>
+      <height>721</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="0" colspan="2">
+        <widget class="QLineEdit" name="Nmax"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="right_enter"/>
+       </item>
+       <item row="8" column="0" colspan="2">
+        <widget class="QLabel" name="picture">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="left_enter"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QRadioButton" name="val_end">
+         <property name="text">
+          <string>Окончание по модулю значения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLineEdit" name="func_enter"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLineEdit" name="eps"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLineEdit" name="step"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QRadioButton" name="sub_end">
+         <property name="text">
+          <string>Окончание по модулю разности</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QPushButton" name="calc">
+         <property name="text">
+          <string>Вычислить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>0</y>
+      <width>641</width>
+      <height>721</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1211</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Меню</string>
+    </property>
+    <addaction name="info"/>
+    <addaction name="calc_m"/>
+    <addaction name="mistakes"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="info">
+   <property name="text">
+    <string>Справка</string>
+   </property>
+  </action>
+  <action name="calc_m">
+   <property name="text">
+    <string>Вычислить</string>
+   </property>
+  </action>
+  <action name="MISAT">
+   <property name="text">
+    <string>Ошибки</string>
+   </property>
+  </action>
+  <action name="mistakes">
+   <property name="text">
+    <string>Ошибки</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
